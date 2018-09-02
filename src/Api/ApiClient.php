@@ -22,7 +22,7 @@ class ApiClient {
      * @param $method
      * @return \Psr\Http\Message\ResponseInterface
      */
-    public function get(string $method): object
+    public function get(string $method): \stdClass
     {
         do {
             $responseRaw = $this->client->request('GET', $method);
@@ -32,7 +32,7 @@ class ApiClient {
         return $response;
     }
 
-    public function hasError(object $requestBody): bool {
+    public function hasError(\stdClass $requestBody): bool {
         return isset($requestBody->error);
     }
 }

@@ -27,7 +27,7 @@ class ProductRepository {
         return $product;
     }
 
-    public function loadProducts(string $id, object $productData, array $suppliers): Product {
+    public function loadProducts(string $id, \stdClass $productData, array $suppliers): Product {
         $textHelper = new TextHelper();
         return (new Product())
             ->setId($id)
@@ -37,7 +37,7 @@ class ProductRepository {
             ->setSuppliers($suppliers);
     }
 
-    public function loadSuppliers(object $productData): array {
+    public function loadSuppliers(\stdClass $productData): array {
         $suppliersData = $productData->suppliers ?? [];
         $textHelper = new TextHelper();
         $suppliers = [];
