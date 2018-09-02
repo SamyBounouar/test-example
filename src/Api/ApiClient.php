@@ -1,9 +1,12 @@
 <?php
 namespace App\Api;
 
-
-class ApiClient {
-
+/**
+ * Class ApiClient
+ * @package App\ApiÒ
+ */
+class ApiClient
+{
     const BASE_URL = 'https://www.itccompliance.co.uk/recruitment-webservice/api/';
     /**
      * @var \GuzzleHttp\Client
@@ -19,8 +22,9 @@ class ApiClient {
     }
 
     /**
-     * @param $method
-     * @return \Psr\Http\Message\ResponseInterface
+     * @param string $method
+     * @return \stdClass
+     * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function get(string $method): \stdClass
     {
@@ -32,7 +36,12 @@ class ApiClient {
         return $response;
     }
 
-    public function hasError(\stdClass $requestBody): bool {
+    /**
+     * @param \stdClass $requestBody
+     * @return bool
+     */
+    public function hasError(\stdClass $requestBody): bool
+    {
         return isset($requestBody->error);
     }
 }

@@ -5,8 +5,17 @@ use App\Api\ApiClient;
 use App\Model\Product;
 use App\Repository\ProductRepository;
 
-class ListProducts {
-    public function run() {
+/**
+ * Class ListProducts
+ * @package App
+ */
+class ListProducts
+{
+    /**
+     * @return array
+     */
+    public function run()
+    {
         $apiClient = new ApiClient();
         $productRepository = new ProductRepository($apiClient);
 

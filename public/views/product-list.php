@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <div class="row">
-        <?php foreach($viewDatas as $product): ?>
+        <?php foreach ($viewDatas as $product): ?>
             <div class="col s6">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">

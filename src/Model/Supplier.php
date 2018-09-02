@@ -26,6 +26,4 @@ class Supplier
         $this->name = $name;
         return $this;
     }
-
-
 }

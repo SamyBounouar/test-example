@@ -2,6 +2,10 @@
 
 namespace App\Model;
 
+/**
+ * Class Product
+ * @package App\ModelÒ
+ */
 class Product
 {
     /**
@@ -126,6 +130,4 @@ class Product
     {
         $this->suppliers[] = $supplier;
     }
-
-
 }
