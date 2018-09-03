@@ -8,7 +8,7 @@ use App\Utils\TextHelper;
 
 /**
  * Class ProductRepository
- * @package App\RepositoryÒ
+ * @package App\Repository
  */
 class ProductRepository
 {
@@ -47,7 +47,7 @@ class ProductRepository
      * @param array $suppliers
      * @return Product
      */
-    public function loadProÒducts(string $id, \stdClass $productData, array $suppliers): Product
+    public function loadProducts(string $id, \stdClass $productData, array $suppliers): Product
     {
         $textHelper = new TextHelper();
         return (new Product())

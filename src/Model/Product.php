@@ -4,7 +4,7 @@ namespace App\Model;
 
 /**
  * Class Product
- * @package App\ModelÒ
+ * @package App\Model
  */
 class Product
 {

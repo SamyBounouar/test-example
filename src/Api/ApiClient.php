@@ -3,7 +3,7 @@ namespace App\Api;
 
 /**
  * Class ApiClient
- * @package App\ApiÒ
+ * @package App\Api
  */
 class ApiClient
 {
